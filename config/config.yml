@@ -1,0 +1,39 @@
+yamlinstructions: |
+  Below are the guidelines for safe and responsible AI interactions.
+  
+models:
+  - type: main
+    engine: groq
+    model: llama3-8b-8192
+
+rails:
+  input:
+    flows:
+      - check input toxicity
+      - check politics topics  
+      - validate input length
+      
+  output:
+    flows:
+      - check output toxicity
+      - enforce citations
+      - limit response length
+      - final safety check
+
+# Define custom topics to block
+blocked_topics:
+  - politics
+  - illegal_activities
+  - harmful_content
+  - personal_attacks
+
+# Toxicity thresholds
+toxicity:
+  input_threshold: 0.2
+  output_threshold: 0.2
+
+# Response limits
+limits:
+  max_input_tokens: 2000
+  max_output_tokens: 1000
+  max_response_length: 500

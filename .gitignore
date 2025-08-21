@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+virtualenv/
+virtualenvs/
+venv/
+env/
+.venv/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS generated files
+.DS_Store
+thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# dotenv files
+.env
+.env.*
+
+# Testing
+.pytest_cache/
+
+# Distribution and packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
